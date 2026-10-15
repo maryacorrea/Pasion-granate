@@ -248,3 +248,23 @@ footer {
     letter-spacing: 1px;
     margin-top: 10px;
 }
+/* BOTONES Y ENLACES DE LA PORTADA */
+.portada a,
+.portada button {
+    display: inline-block;
+    background: #800029;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.portada a:hover,
+.portada button:hover {
+    background: #ffffff;
+    color: #800029;
+    border-color: #800029;
+}
