@@ -536,3 +536,53 @@ footer {
         font-size: 14px;
     }
 }
+/* HISTORIA DEL FUTBOL FEMENINO */
+
+.historia-femenino {
+    margin: 25px auto;
+    padding: 15px;
+    max-width: 800px;
+    border: 2px solid #800029;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #333;
+}
+
+.historia-femenino summary {
+    background-color: #800029;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.historia-femenino h2 {
+    color: #800029;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.historia-femenino p {
+    line-height: 1.7;
+}
+
+.historia-item {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #800029;
+    background-color: #f8f0f3;
+    border-radius: 6px;
+}
+
+.historia-item h3 {
+    color: #800029;
+    margin-top: 0;
+}
+
+.cierre-historia {
+    text-align: center;
+    color: #800029;
+    padding: 15px 0;
+}
