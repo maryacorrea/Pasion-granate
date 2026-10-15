@@ -1,4 +1,4 @@
-/* ESTILO GENERAL */
+/* DISEÑO GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -10,167 +10,162 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f3f4;
-    color: #252025;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #f5f3f4;
+    color: #292329;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 /* ENCABEZADO */
 .encabezado {
-    background-color: #65001f;
+    background: #65001f;
     color: white;
-    padding: 18px 6%;
+    padding: 18px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 15px;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .logo img {
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
 nav {
     display: flex;
-    gap: 18px;
+    gap: 22px;
     flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffcfda;
+    color: #ffb6ca;
 }
 
 /* PORTADA */
 .portada {
-    min-height: 440px;
-    padding: 80px 20px;
+    min-height: 340px;
+    padding: 65px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    background: linear-gradient(135deg, #390014, #85002c, #26000e);
+    background: linear-gradient(135deg, #28000e, #85002c);
 }
 
 .subtitulo {
     color: #ffc6d7;
     font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
 .portada h1 {
-    font-size: clamp(32px, 6vw, 58px);
-    line-height: 1.15;
-    margin-bottom: 22px;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .portada p {
-    max-width: 650px;
-    margin-bottom: 25px;
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 24px;
 }
 
 .boton {
     display: inline-block;
-    padding: 14px 24px;
-    background-color: white;
+    padding: 12px 24px;
+    background: white;
     color: #65001f;
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
-    transition: transform 0.3s, background-color 0.3s;
-}
-
-.boton:hover {
-    background-color: #ffcfda;
-    transform: translateY(-3px);
 }
 
 /* SECCIONES */
 .seccion {
-    padding: 65px 7%;
+    padding: 45px 6%;
     text-align: center;
 }
 
 .seccion h2 {
     color: #65001f;
-    font-size: clamp(28px, 4vw, 40px);
-    margin-bottom: 18px;
+    font-size: clamp(27px, 3vw, 34px);
+    margin-bottom: 15px;
 }
 
 .etiqueta {
     color: #a0003c;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-bottom: 8px;
 }
 
 .descripcion {
-    max-width: 750px;
-    margin: 0 auto 30px;
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 17px;
 }
 
 /* TARJETAS */
 .tarjetas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    margin-top: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
     text-align: left;
 }
 
 .tarjeta {
-    background-color: white;
-    padding: 28px;
-    border-radius: 12px;
-    border-top: 5px solid #80002b;
-    box-shadow: 0 5px 18px rgba(50, 0, 20, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.tarjeta:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(50, 0, 20, 0.15);
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    border-top: 4px solid #80002b;
+    box-shadow: 0 4px 14px rgba(50, 0, 20, 0.08);
 }
 
 .tarjeta h3 {
     color: #65001f;
+    font-size: 21px;
     margin: 12px 0;
 }
 
+.tarjeta p {
+    font-size: 16px;
+}
+
 .icono {
-    font-size: 38px;
+    font-size: 30px;
 }
 
 /* NOTICIAS */
 .noticias {
-    background-color: #eee7ea;
+    background: #eee7ea;
 }
 
 .aviso {
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 14px;
     color: #66545c;
     font-style: italic;
@@ -178,31 +173,31 @@ nav a:hover {
 
 /* RESULTADOS */
 .resultados {
-    background-color: white;
+    background: white;
 }
 
 .marcador {
     max-width: 650px;
-    margin: 30px auto 0;
-    padding: 25px;
+    margin: 25px auto 0;
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
-    background-color: #65001f;
+    background: #65001f;
     color: white;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .marcador span {
-    font-size: 25px;
+    font-size: 24px;
 }
 
 /* PIE DE PÁGINA */
 footer {
-    background-color: #21000c;
+    background: #21000c;
     color: white;
-    padding: 35px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -212,25 +207,41 @@ footer h2 {
 }
 
 .copyright {
-    margin-top: 18px;
-    font-size: 13px;
+    margin-top: 15px;
+    font-size: 14px;
     color: #d9bdc7;
 }
 
-/* DISEÑO PARA CELULARES Y TABLETS */
-@media (max-width: 700px) {
-    .encabezado {
-        flex-direction: column;
-        text-align: center;
+/* CELULARES Y TABLETS */
+@media (max-width: 850px) {
+    .tarjetas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .logo {
+    .encabezado {
         justify-content: center;
-        font-size: 19px;
+        text-align: center;
     }
 
     nav {
         justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        font-size: 16px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
         gap: 12px;
     }
 
@@ -239,15 +250,15 @@ footer h2 {
     }
 
     .portada {
-        min-height: 380px;
-        padding: 55px 18px;
+        min-height: 300px;
+        padding: 45px 18px;
+    }
+
+    .portada p {
+        font-size: 16px;
     }
 
     .seccion {
-        padding: 45px 20px;
-    }
-
-    .tarjetas {
-        grid-template-columns: 1fr;
+        padding: 35px 18px;
     }
 }
