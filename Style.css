@@ -268,3 +268,157 @@ footer {
     color: #800029;
     border-color: #800029;
 }
+/* LISTA DESPLEGABLE DE JUGADORAS */
+
+.lista-jugadoras {
+    width: 100%;
+    max-width: 700px;
+    margin: 25px auto;
+    border: 2px solid #800029;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* BOTÓN PARA ABRIR LA LISTA */
+
+.lista-jugadoras summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 18px 15px;
+    background-color: #800029;
+    color: #ffffff;
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+}
+
+.lista-jugadoras summary::-webkit-details-marker {
+    display: none;
+}
+
+.pelota {
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.titulo-jugadoras {
+    flex: 1;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.flecha {
+    font-size: 23px;
+    color: #ffffff;
+}
+
+/* CAMBIO DE SIGNO AL ABRIR */
+
+.lista-jugadoras[open] .flecha {
+    font-size: 0;
+}
+
+.lista-jugadoras[open] .flecha::after {
+    content: "−";
+    font-size: 25px;
+}
+
+/* CONTENIDO */
+
+.contenido-jugadoras {
+    padding: 15px;
+    background-color: #fffafb;
+}
+
+.subtitulo-jugadoras {
+    text-align: center;
+    color: #800029;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0 20px;
+}
+
+.contenido-jugadoras h4 {
+    color: #800029;
+    background-color: #f3e4e9;
+    padding: 10px;
+    border-left: 5px solid #800029;
+    border-radius: 5px;
+    margin: 22px 0 10px;
+    font-size: 15px;
+}
+
+/* FILA DE CADA JUGADORA */
+
+.jugadora {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 5px;
+    border-bottom: 1px solid #ead5dc;
+    color: #333333;
+    font-size: 14px;
+}
+
+.numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #800029;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.posicion {
+    color: #800029;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.cierre-jugadoras {
+    margin-top: 25px;
+    padding: 14px 8px;
+    border-radius: 8px;
+    background-color: #800029;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 480px) {
+
+    .titulo-jugadoras {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    .contenido-jugadoras {
+        padding: 10px;
+    }
+
+    .jugadora {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .posicion {
+        grid-column: 2;
+        text-align: left;
+        margin-top: -5px;
+        padding-bottom: 5px;
+    }
+}
