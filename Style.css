@@ -228,3 +228,23 @@ footer {
         height: 170px;
     }
 }
+/* TEXTO DE LA PORTADA */
+.marcador {
+    text-align: left;
+}
+
+.marcador .subtitulo {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.marcador span {
+    display: block;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
