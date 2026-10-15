@@ -1,4 +1,4 @@
-/* DISEÑO GENERAL */
+/* CONFIGURACIÓN GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f3f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3f4;
     color: #292329;
     font-size: 17px;
     line-height: 1.7;
@@ -19,33 +19,34 @@ body {
 
 /* ENCABEZADO */
 .encabezado {
-    background: #65001f;
+    background-color: #65001f;
     color: white;
     padding: 18px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 18px;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .logo img {
-    width: 48px;
-    height: 48px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
 }
 
 nav {
     display: flex;
-    gap: 22px;
+    gap: 18px;
     flex-wrap: wrap;
 }
 
@@ -57,12 +58,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffb6ca;
+    color: #ffcfda;
 }
 
-/* PORTADA */
+/* PORTADA PRINCIPAL */
 .portada {
-    min-height: 340px;
+    min-height: 420px;
     padding: 65px 20px;
     display: flex;
     flex-direction: column;
@@ -70,61 +71,67 @@ nav a:hover {
     align-items: center;
     text-align: center;
     color: white;
-    background: linear-gradient(135deg, #28000e, #85002c);
+    background: linear-gradient(135deg, #390014, #85002c, #26000e);
 }
 
 .subtitulo {
     color: #ffc6d7;
     font-weight: bold;
     letter-spacing: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .portada h1 {
-    font-size: clamp(30px, 4vw, 46px);
+    font-size: clamp(32px, 5vw, 52px);
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .portada p {
-    max-width: 700px;
+    max-width: 750px;
     font-size: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .boton {
     display: inline-block;
-    padding: 12px 24px;
-    background: white;
+    padding: 13px 25px;
+    background-color: white;
     color: #65001f;
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #ffcfda;
+    transform: translateY(-3px);
 }
 
 /* SECCIONES */
 .seccion {
-    padding: 45px 6%;
+    padding: 55px 6%;
     text-align: center;
 }
 
 .seccion h2 {
     color: #65001f;
-    font-size: clamp(27px, 3vw, 34px);
-    margin-bottom: 15px;
+    font-size: clamp(28px, 4vw, 38px);
+    margin-bottom: 18px;
 }
 
 .etiqueta {
     color: #a0003c;
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 8px;
 }
 
 .descripcion {
     max-width: 800px;
-    margin: 0 auto 25px;
+    margin: 0 auto 30px;
     font-size: 17px;
 }
 
@@ -132,72 +139,90 @@ nav a:hover {
 .tarjetas {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-    margin-top: 25px;
+    gap: 24px;
+    margin-top: 30px;
     text-align: left;
 }
 
 .tarjeta {
-    background: white;
-    padding: 24px;
-    border-radius: 10px;
-    border-top: 4px solid #80002b;
-    box-shadow: 0 4px 14px rgba(50, 0, 20, 0.08);
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 5px solid #80002b;
+    box-shadow: 0 5px 18px rgba(50, 0, 20, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(50, 0, 20, 0.15);
 }
 
 .tarjeta h3 {
     color: #65001f;
-    font-size: 21px;
+    font-size: 22px;
+    line-height: 1.4;
     margin: 12px 0;
 }
 
 .tarjeta p {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .icono {
-    font-size: 30px;
+    font-size: 34px;
+}
+
+/* IMÁGENES DENTRO DE LAS TARJETAS */
+.tarjeta img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 /* NOTICIAS */
 .noticias {
-    background: #eee7ea;
+    background-color: #eee7ea;
 }
 
 .aviso {
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 25px;
+    font-size: 15px;
     color: #66545c;
     font-style: italic;
 }
 
 /* RESULTADOS */
 .resultados {
-    background: white;
+    background-color: white;
 }
 
 .marcador {
     max-width: 650px;
-    margin: 25px auto 0;
-    padding: 24px;
+    margin: 30px auto 0;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
-    background: #65001f;
+    background-color: #65001f;
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .marcador span {
-    font-size: 24px;
+    font-size: 25px;
 }
 
 /* PIE DE PÁGINA */
 footer {
-    background: #21000c;
+    background-color: #21000c;
     color: white;
-    padding: 30px 20px;
+    padding: 35px 20px;
     text-align: center;
 }
 
@@ -207,12 +232,12 @@ footer h2 {
 }
 
 .copyright {
-    margin-top: 15px;
+    margin-top: 18px;
     font-size: 14px;
     color: #d9bdc7;
 }
 
-/* CELULARES Y TABLETS */
+/* TABLETS */
 @media (max-width: 850px) {
     .tarjetas {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -228,20 +253,24 @@ footer h2 {
     }
 }
 
+/* CELULARES */
 @media (max-width: 550px) {
     body {
         font-size: 16px;
     }
 
-    .tarjetas {
-        grid-template-columns: 1fr;
+    .encabezado {
+        flex-direction: column;
+        padding: 18px 15px;
     }
 
     .logo {
+        justify-content: center;
         font-size: 20px;
     }
 
     nav {
+        justify-content: center;
         gap: 12px;
     }
 
@@ -250,7 +279,7 @@ footer h2 {
     }
 
     .portada {
-        min-height: 300px;
+        min-height: 340px;
         padding: 45px 18px;
     }
 
@@ -259,6 +288,19 @@ footer h2 {
     }
 
     .seccion {
-        padding: 35px 18px;
+        padding: 40px 18px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+
+    .tarjeta img {
+        height: 200px;
     }
 }
